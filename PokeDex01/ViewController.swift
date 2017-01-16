@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       // let charizard = Pokemon(nameOfPokemon: "Charizard", pokemonId: 6)
+        
     }
 
     override func didReceiveMemoryWarning() {
