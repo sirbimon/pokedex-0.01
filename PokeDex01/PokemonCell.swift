@@ -8,7 +8,21 @@
 
 import UIKit
 
+@IBDesignable
+
 class PokemonCell: UICollectionViewCell {
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            self.layer.cornerRadius = cornerRadius
+        }
+    }
+    
+    @IBInspectable var lineColor: UIColor = UIColor.black {
+        didSet {
+            self.layer.borderColor = lineColor.cgColor
+        }
+    }
     
     @IBOutlet weak var thumbImg: UIImageView!
     @IBOutlet weak var thumbTitle: UILabel!

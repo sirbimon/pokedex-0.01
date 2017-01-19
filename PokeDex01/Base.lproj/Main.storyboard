@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="height" constant="592" id="st0-Tc-Hk5"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KIx-z0-syv">
-                                    <size key="itemSize" width="105" height="122"/>
+                                    <size key="itemSize" width="105" height="105"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -61,12 +61,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="AFv-v6-0MK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="87"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="87" id="Cxy-DQ-7Ng"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caterpie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxs-Fp-eri">
                                                     <rect key="frame" x="0.0" y="84" width="105" height="21"/>
                                                     <color key="backgroundColor" red="1" green="0.0" blue="0.1022875992" alpha="1" colorSpace="calibratedRGB"/>
@@ -74,6 +68,12 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="AFv-v6-0MK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="87"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="87" id="Cxy-DQ-7Ng"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,6 +88,14 @@
                                             <constraint firstItem="zxs-Fp-eri" firstAttribute="top" secondItem="AFv-v6-0MK" secondAttribute="bottom" constant="-3" id="zjC-dx-ZOn"/>
                                         </constraints>
                                         <size key="customSize" width="105" height="105"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="thumbImg" destination="AFv-v6-0MK" id="wSU-zj-0Ox"/>
                                             <outlet property="thumbTitle" destination="zxs-Fp-eri" id="JJV-bH-oXw"/>
